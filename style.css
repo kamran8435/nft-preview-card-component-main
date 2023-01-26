@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+.mainbody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: hsl(217, 54%, 11%);
+}
+.cardbody{
+    background-color: hsl(216, 50%, 16%);
+    height: 490px;
+    width: 280px;
+    border-radius: 7px;
+}
+.imgbody{
+    position: relative;
+    margin: 17px;
+}
+.imgicon{
+    width: 245px;
+    border-radius: 6px;
+    position: relative;
+}
+.content{
+    margin: 15px 15px;
+    position: absolute;
+    top: 400px;
+    width: 250px;
+}
+.content a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.content a:hover{
+    color: hsl(178, 100%, 50%);
+}
+p{
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    display: block;
+}
+.content2{
+    width: auto;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+.content2 h2{
+    display: inline;
+    color: hsl(178, 100%, 50%);
+    font-size: 14px;
+    margin-right: 70px;
+}
+.content2 p{
+    display: inline;
+    position: relative;
+    right: 0px;
+}
+.content3{
+    margin: 11px;
+}
+.content3 p{
+    font-size: 13px;
+    display: block;
+    padding-left: 45px;
+    margin-top: -25px;
+}
+.content3 a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.content3 img{
+    height: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: inline;
+}
+.item1{
+    display: inline;
+}
+.item2{
+    display: inline;
+}
+.content3 a:hover{
+    color: hsl(178, 100%, 50%);
+}
+.overlay{
+    position: absolute;
+    top: 0px;
+    display: none;
+    height: 245px;
+    width: 245px;
+}
+.icon{
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    z-index: 1;
+}
+.imgicon:hover .overlay{
+    display: block;
+}
+
+.forhover{
+    height: 245px;
+    width: 245px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 7px;
+    position: absolute;
+    top: 0px;
+    opacity: 0.5;
+    display: none;
+}
+
+.cardbody div:hover .forhover, .cardbody div:hover .overlay{       
+    display: block;
+}
